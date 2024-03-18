@@ -1,0 +1,20 @@
+aside div ul{
+    border:solid rgb(0, 191, 255);
+    padding:10px;
+    border-radius: 50px;
+}
+
+.asidedisplay-fixed {
+    height: 25px;
+    fill:aqua
+}
+
+aside div {
+    position: fixed !important;
+    right:10px;
+    bottom: 50vh;
+}
+
+aside ul li {
+    list-style-type: none;
+}

@@ -1,0 +1,359 @@
+/* @media screen and (max-width:700px) {
+    .about {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 75% 20%;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 400px 1200px;
+        background-position: -120px -130px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+} */
+
+@media screen and (max-width:1000px) {
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 90px;
+    }
+    
+    body {
+        background-color: rgb(27, 30, 30);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        margin:0;
+    }
+    
+    h2 {
+        text-align: center;
+        margin-top: 1em;
+    }
+    aside {
+        display:none;
+    }
+    nav {
+        text-align: center;
+        position: sticky;
+        top: 0px;
+        backdrop-filter: blur(70px);
+        z-index: 1; /* detta kommer ge z-index ett högre värde så backrop inte påverkar mina andra element */
+        font-weight: 600;
+        /* width:100%; */
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 25px;
+        border-top: solid;
+        border-bottom: solid;
+        border-image: linear-gradient(45deg, orange, rgb(166,255,0),aqua) 1;
+        
+    }
+    nav a {
+        color:rgb(230,230,230);
+        text-decoration: none;
+        padding: 10px 5px 10px 5px;
+    }
+    nav a:hover {
+        color:orange;
+    }
+    
+    nav ul li {
+        display: inline;
+        border-right: 1.5px solid;
+        border-color: aqua; /* ska jag ha rgb(166,255,0) istället? */
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+    :nth-child(n+5){
+        border-right: none;
+    }
+    /* Till iconerna i navbaren */
+    nav svg {
+        float: right;
+        fill:aqua;
+        height: 20px;
+        margin-left: 10px;
+    }
+    section {
+        color: black;
+        /* display: inline-block; */
+        /* max-height: 1000px; */
+        /* min-height: 200px; */
+        /* overflow-y: auto; */
+        margin-bottom: 25px;
+        color:rgb(200,200,200);
+        background-color: rgb(36, 36, 36);/* här är bakgrundsfärgen för alla sections  */
+        border-radius: 15px;
+        text-align: center;
+    }
+    /* section p {
+        text-align: center;
+    } */
+    section form input, textarea {
+        margin-bottom: 10px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    /* section form {
+        text-align: center;
+    } */
+    
+    /* About me */
+    header {
+        display: none;
+    }
+    #weatherInfo {
+        text-align: left;
+        font-style: italic;
+        font-size: 17px;
+        padding:10px;
+    }
+    #weatherInfo p {
+        padding:10px;
+        font-style: italic;
+        font-size: 17px;
+    }
+    .small-weather-icons {
+        height: 50px;
+    }
+    .weatherIcon {
+        text-align: left;
+    }
+    .about {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5% 75% 20%;
+        background-image: url("/images/Pose.png");
+        background-repeat: no-repeat;
+        background-size: 800px 1200px;
+        background-position: -120px -130px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    .aboutmebox {
+        /* grid-column-start: 2;
+        grid-row-start: 2;
+        padding:0px 20px 20px 20px; */
+        margin: 10% auto 10% auto;
+        width: 80%;
+        height: 80%;
+        overflow-y: auto;
+        border:solid orange;
+        box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+        border-radius: 15px;
+        line-height: 1.5;
+    }
+    .aboutbutton {
+        padding:10px 20px 10px 20px;
+        background-image: linear-gradient(to right bottom, #ffa500, #d4a300, #aa9e00, #819700, #598e00, #66ae42, #50b356, #26a764, #10bc83, #00d0a8, #00e8d4, #00ffff);
+        border-radius: 15px;
+        font-size: 15px;
+        border:solid orange;
+        box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+        margin-top: 30px;
+        font-weight: 900;
+        text-shadow: 0px 0px 25px black;
+    }
+    .aboutbutton-grid {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+    .aboutbutton a {
+        text-decoration: none;
+        color:antiquewhite;
+    }
+
+    /* Skills */
+    .skills {
+        background-Image: url('/images/Python.png');
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 70px 300px 200px;
+    }
+    .skillstextbox {
+        margin: auto;
+        /* margin-top: 50px; */
+        box-sizing: border-box;
+        width: 70%;
+        height: 70%;
+        padding:10px;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter:blur(3px);
+        border:solid orange;
+        box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+        border-radius: 15px;
+        line-height: 1.3em;
+    }
+    .skills-icons {
+        width: 50px;
+        fill:rgba(154, 188, 95);
+        padding: 10px;
+    }
+    .listicons {
+        display: inline;
+    }
+    .icon-container {
+        display: inline-block;
+        margin: 10px;
+    }
+    .icon-text-container {
+        display: grid;
+        place-content: center;
+    }
+    .ulstyling {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 15px;
+        backdrop-filter:blur(3px);
+    }
+    
+    svg:hover {
+        fill: orange;
+    }
+    .icon-container:hover .hovereffect {
+        color:orange;
+        text-shadow: 0px 0px 50px orange;
+    }
+    .hovereffect {
+        color:rgb(154, 188, 95);
+    }
+    /* /Skills */
+
+
+
+    /* References */
+    .references {
+        text-align: center;
+        height: 650px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 200px 270px 50px;
+    }
+    .headlinereferences {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+    }
+    .referencestextbox {
+        margin:auto;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-column-end: 4;
+        box-sizing: border-box;
+        overflow-y: auto;
+        width: 80%;
+        height: 70%;
+        padding:1rem;
+        background-color: rgba(0, 0, 0, 0.3);
+        border:solid orange;
+        box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+        border-radius: 15px;
+        line-height: 1.3em;
+    }
+    .referencestextbox div p {
+        font-style: italic;
+    }
+    .contactsinfogrid {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        margin: auto;
+    }
+    .contactsinfogrid ul {
+        list-style: none;
+        margin-left:5px;
+        text-align: left;
+    }
+    .contactsinfogrid ul li svg {
+        height: 50px;
+        width: 50px;
+        fill:rgb(230, 230, 230);
+    }
+    .contactsinfogrid ul li a {
+        text-decoration: underline rgba(255, 166, 0, 0.477);
+        color:rgb(200,200,200);
+    }
+    .arrow-to-contacts {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        align-self: end;
+    }
+    .arrow-to-contacts svg {
+        height: 25px;
+        width: 25px;
+        place-content: end;
+        fill:orange;
+    }
+    .arrow-to-contacts p {
+        font-size: 15px;
+        font-style: italic;
+    }
+    .endlinereferences {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 4;
+        align-self: end;
+        font-style: italic;
+    }
+    /* /References */
+
+    /* Contact me */
+    /* First name and email boxes */
+    .grid-center {
+        display: grid;
+        gap:1.5rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .fname-email {
+        width: 200px;
+        padding:5px;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .textbox {
+        height: 80px;
+        padding:5px 10px 5px 10px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .sub-button {
+        min-width: 30%;
+        height: 40px;
+        color:rgb(255, 255, 255);
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        font-size: large;
+        border-color: orange;
+        background-image: linear-gradient(to right bottom, #ffa500, #d4a300, #aa9e00, #819700, #598e00, #66ae42, #50b356, #26a764, #10bc83, #00d0a8, #00e8d4, #00ffff);
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+    }
+
+    .download-resume-button {
+        padding: 10px;
+        margin-top:10%;
+        margin-bottom:20px;
+        border-radius: 15px;
+        fill:rgb(63, 97, 52);
+    }
+    .downloadgrid p {
+        font-style: italic;
+    }
+    .download-resume-svg {
+        height: 50px;
+    }
+    .downloadgrid {
+        margin:21px 0px 21px 21px;
+        background-color: rgba(123, 255, 0, 0.07);
+        border-radius: 15px;
+    }
+    .contactgrid {
+        margin:21px 21px 21px 0px;
+        background-color: rgba(0, 123, 255, 0.07);
+        border-radius: 15px;
+    }
+    /* Contact me */
+}

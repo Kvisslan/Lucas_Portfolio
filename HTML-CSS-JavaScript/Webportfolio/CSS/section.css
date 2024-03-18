@@ -1,0 +1,297 @@
+section {
+    color: black;
+    /* display: inline-block; */
+    /* max-height: 1000px; */
+    /* min-height: 200px; */
+    /* overflow-y: auto; */
+    margin-bottom: 25px;
+    color:rgb(200,200,200);
+    background-color: rgb(36, 36, 36);/* här är bakgrundsfärgen för alla sections  */
+    border-radius: 15px;
+    text-align: center;
+}
+/* section p {
+    text-align: center;
+} */
+section form input, textarea {
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* section form {
+    text-align: center;
+} */
+
+/* About me */
+#weatherInfo {
+    text-align: left;
+    font-style: italic;
+    font-size: 17px;
+    padding:10px;
+}
+#weatherInfo p {
+    padding:10px;
+    font-style: italic;
+    font-size: 17px;
+}
+.small-weather-icons {
+    height: 50px;
+}
+.weatherIcon {
+    text-align: left;
+}
+.about {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25vh 40vh 30vh;
+    background-image: url("/images/Pose.png");
+    background-repeat: no-repeat;
+    background-size: 800px 1200px;
+    background-position: -80px -130px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.aboutmebox {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    padding:0px 20px 20px 20px;
+    width: 600px;
+    height: 350px;
+    border:solid orange;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+    border-radius: 15px;
+    line-height: 1.5;
+}
+.aboutbutton {
+    padding:25px 80px 25px 80px;
+    background-image: linear-gradient(to right bottom, #ffa500, #d4a300, #aa9e00, #819700, #598e00, #66ae42, #50b356, #26a764, #10bc83, #00d0a8, #00e8d4, #00ffff);
+    border-radius: 15px;
+    font-size: 30px;
+    border:solid orange;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+    margin-top: 30px;
+    font-weight: 900;
+    text-shadow: 0px 0px 25px black;
+}
+.aboutbutton-grid {
+    grid-column-start: 2;
+    grid-row-start: 3;
+}
+.aboutbutton a {
+    text-decoration: none;
+    color:antiquewhite;
+}
+/* /About me */
+
+/* Skills */
+.skills {
+   background-Image: url('/images/Python.png');
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-rows: 130px 330px 230px;
+}
+.skillstextbox {
+    margin: auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 550px;
+    height: 250px;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter:blur(3px);
+    border:solid orange;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+    border-radius: 15px;
+    line-height: 1.3em;
+}
+.skills-icons {
+    width: 50px;
+    fill:rgba(154, 188, 95);
+    padding: 10px;
+}
+.listicons {
+    display: inline;
+}
+.icon-container {
+    display: inline-block;
+    margin: 10px;
+}
+.icon-text-container {
+    display: grid;
+    place-content: center;
+}
+.ulstyling {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    backdrop-filter:blur(3px);
+}
+
+svg:hover {
+    fill: orange;
+}
+.icon-container:hover .hovereffect {
+    color:orange;
+    text-shadow: 0px 0px 50px orange;
+}
+.hovereffect {
+    color:rgb(154, 188, 95);
+}
+/* /Skills */
+
+/* Gitportfolio */
+/* .gitportfolio {
+    text-align: center;
+    max-height: 400px;
+    min-height: 300px;
+}
+.gitportfolioimg {
+    padding:10px;
+    height: 300px;
+} */
+/* .clickankor {
+    cursor: pointer;
+    text-decoration: none;
+}
+.clickimage {
+    transition: tranform 0.2s ease;
+}
+.clickankor:hover .clickimage {
+    transform: scale(1.1);
+} */
+
+/* /Gitportfolio */
+
+
+
+/* References */
+.references {
+    text-align: center;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.headlinereferences {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+}
+.referencestextbox {
+    margin-right: 50px;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    box-sizing: border-box;
+    width: 600px;
+    height: 300px;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border:solid orange;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+    border-radius: 15px;
+    line-height: 1.3em;
+}
+.referencestextbox div p {
+    font-style: italic;
+}
+.contactsinfogrid {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+}
+.contactsinfogrid ul {
+    list-style: none;
+    margin-left:25px;
+    text-align: left;
+}
+.contactsinfogrid ul li svg { /* styling av svg filerna som ska bli bilder */
+    height: 50px;
+    width: 50px;
+    fill:rgb(230, 230, 230);
+}
+.contactsinfogrid ul li a {
+    text-decoration: underline rgba(255, 166, 0, 0.477);
+    color:rgb(200,200,200);
+}
+.arrow-to-contacts {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    align-self: end;
+}
+.arrow-to-contacts svg {
+    height: 30px;
+    width: 30px;
+    place-content: end;
+    fill:orange;
+}
+.arrow-to-contacts p {
+    font-size: 20px;
+    font-style: italic;
+}
+.endlinereferences {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    align-self: end;
+    font-style: italic;
+}
+/* /References */
+
+/* Contact me */
+/* First name and email boxes */
+.grid-center {
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+.fname-email {
+    width: 300px;
+    padding:10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.textbox {
+    width: 70%;
+    padding:10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.sub-button {
+    min-width: 20%;
+    height: 50px;
+    color:rgb(255, 255, 255);
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-size: large;
+    border-color: orange;
+    background-image: linear-gradient(to right bottom, #ffa500, #d4a300, #aa9e00, #819700, #598e00, #66ae42, #50b356, #26a764, #10bc83, #00d0a8, #00e8d4, #00ffff);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px rgba(255, 174, 0, 0.5);
+}
+
+.download-resume-button {
+    padding: 10px;
+    margin-top:10%;
+    margin-bottom:20px;
+    border-radius: 15px;
+    fill:rgb(63, 97, 52);
+}
+.downloadgrid p {
+    font-style: italic;
+}
+.download-resume-svg {
+    height: 50px;
+}
+.downloadgrid {
+    margin:21px 0px 21px 21px;
+    background-color: rgba(123, 255, 0, 0.07);
+    border-radius: 15px;
+}
+.contactgrid {
+    margin:21px 21px 21px 0px;
+    background-color: rgba(0, 123, 255, 0.07);
+    border-radius: 15px;
+}
+/* Contact me */

@@ -1,0 +1,35 @@
+/* header {
+    background-color: aqua;
+    background-image: linear-gradient(to right, orange, green, aqua);
+    text-align: left;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    text-shadow: 10px 30px 7px black;
+    font-family: customfont;
+    letter-spacing: 5px;
+    
+}
+header h1 a {
+    text-decoration: none;
+    color:black;
+} */
+
+/* Denna ligger i section about me */
+header {
+    text-align: center;
+    /* margin-left:450px; */
+    /* margin-right: 20px; */
+    text-shadow: 10px 30px 7px black;
+    font-family: customfont;
+    letter-spacing: 5px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    font-size: 40px;
+    line-height: 1.5em;
+}
+header h1 a {
+    text-decoration: none;
+    color:rgb(255, 183, 0);
+}
+/* /Denna ligger i section about me */

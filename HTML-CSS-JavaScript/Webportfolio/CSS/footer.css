@@ -1,0 +1,63 @@
+footer {
+    background-color: rgb(80, 80, 90);
+    border:solid;
+    border-image: linear-gradient(45deg, orange, rgb(166,255,0),aqua) 1;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    min-height: 200px;
+    max-height: 300px;
+}
+
+footer div h4,p {
+    margin:5px;
+    text-align: center;
+}
+
+/* .footericons {
+    display:inline;
+} */
+
+.footergrid {
+    display: grid;
+    gap:1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fleft {
+    margin:15px
+}
+.footerlinktext:hover {
+    color:orange;
+}
+.fcenter {
+    margin:15px;
+}
+.fright {
+    margin:15px
+}
+.fright p a {
+    text-decoration: none;
+    color:rgb(5, 217, 255);
+}
+
+.fgithub {
+    height: 20px;
+    width: 20px;
+    fill:aqua;
+}
+.underscore-left {
+    text-decoration: underline rgb(255, 165, 0);
+    text-decoration-thickness: 3px;
+    color:rgb(200,200,200);
+}
+.underscore-middle {
+    text-decoration: underline rgb(166,255,0);
+    text-decoration-thickness: 3px;
+    color:rgb(200,200,200);
+}
+.underscore-right {
+    text-decoration: underline rgb(0, 255, 255);
+    text-decoration-thickness: 3px;
+    color:rgb(200,200,200);
+}

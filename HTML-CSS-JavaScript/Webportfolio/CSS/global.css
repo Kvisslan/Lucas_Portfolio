@@ -1,0 +1,27 @@
+@font-face {
+    font-family: customfont;
+    src: url('/Dragrace.ttf') format('truetype');
+}
+
+.customfontclass {
+    font-family: customfont, Arial, Helvetica;
+    letter-spacing: 3px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    background-color: rgb(27, 30, 30);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin:0;
+}
+
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}

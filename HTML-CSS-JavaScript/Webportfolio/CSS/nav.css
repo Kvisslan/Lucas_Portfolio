@@ -1,0 +1,49 @@
+nav {
+    text-align: center;
+    position: sticky;
+    /* overflow: hidden; gillar nästan utan mer?*/
+    top: 0px;
+    backdrop-filter: blur(70px);
+    z-index: 1; /* detta kommer ge z-index ett högre värde så backrop inte påverkar mina andra element */
+    font-weight: 600;
+    /* width:100%; */
+}
+nav ul {
+    list-style-type: none;
+    padding: 25px;
+    border-top: solid;
+    border-bottom: solid;
+    border-image: linear-gradient(45deg, orange, rgb(166,255,0),aqua) 1;
+    
+}
+nav a {
+    color:rgb(230,230,230);
+    text-decoration: none;
+    padding: 10px 5px 10px 5px;
+}
+nav a:hover {
+    color:orange;
+}
+
+nav ul li {
+    display: inline;
+    border-right: 1.5px solid;
+    border-color: aqua; /* ska jag ha rgb(166,255,0) istället? */
+    margin-left: 3px;
+    margin-right: 3px;
+}
+:nth-child(n+5){
+    border-right: none;
+}
+/* Till iconerna i navbaren */
+nav svg {
+    float: right;
+    fill:aqua;
+    height: 20px;
+    margin-left: 10px;
+}
+/* För mitt namn - ska detta till navbaren när man skrollar ner? */
+/* .titlelucas {
+    float:left;
+    border-right: hidden;
+} */
