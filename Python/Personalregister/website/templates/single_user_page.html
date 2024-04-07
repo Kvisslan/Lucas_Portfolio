@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}
+FramtidsRytm: {{user.name}}
+{% endblock %}
+
+{% block content %}
+<div class="contactbox">
+    <div class="infobox">
+        <h3>{{user.name}}</h3>
+        <p>Ålder: {{user.age}}</p>
+
+        <p>Gatunamn: {{user.street_name}}</p>
+        <p>Gatunummer: {{user.street_number}}</p>
+        <p>Postnummer: {{user.postal_code}}</p>
+        <p>Stad: {{user.city}}</p>
+        <p>Län: {{user.state}}</p>
+
+        <p>Telefonnummer: {{user.phone}}</p>
+        <p>Land: {{user.country}}</p>
+    </div>
+    <div class="imgbox">
+        <img src="{{user_img.img_url}}" title="Detta är en bild på personen">
+    </div>
+</div>
+{% endblock %}

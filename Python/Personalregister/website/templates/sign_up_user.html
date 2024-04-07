@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Sign up for webaccess{% endblock %}
+
+{% block content %}
+<section class="loginsignup">
+    <h1 class="loginpageheader">Sign up for webaccess</h1>
+    <form class="loginpage" method="POST">
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <label for="password1">Lösenord: </label>
+        <input type="password" name="password1" id="password1" placeholder="Password" required>
+
+        <label for="password2"> Bekräfta lösenordet: </label>
+        <input type="password" name="password2" id="password2" placeholder="Confirm password.." required>
+
+        <button type="submit">Sign up!</button>
+    </form>
+</section>
+{% endblock %}

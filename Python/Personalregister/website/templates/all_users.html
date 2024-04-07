@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}
+Personalregister
+{% endblock %}
+
+{% block content %}
+<div class="personalregisterheader">
+    <h1>Personalregister</h1>
+    <p>Här kan du se alla personer i företaget!</p>
+</div>
+
+<form method="get">
+    <div class="searchfield">
+        <p>Sök efter en person: </p>
+        <input type="text" name="get_users" placeholder="Sökfält" value="{{get_users}}">
+        <button class="personalbutton" type="submit">Sök!</button>
+    </div>
+</form>
+<table class="mytabletop">
+    <thead class="mytable">
+        <tr>
+            <td>
+                ID
+                <a
+                    href="{{url_for('routes.all_users', sort_by_order='asc', sort_column_id='id', get_users = get_users)}}"></a>
+            </td>
+            <td>
+                Namn
+                <a
+                    href="{{url_for('routes.all_users', sort_by_order='asc', sort_column_id='name', get_users = get_users)}}"></a>
+            </td>
+            <td>
+                Ålder
+                <a
+                    href="{{url_for('routes.all_users', sort_by_order='asc', sort_column_id='age', get_users = get_users)}}"></a>
+            </td>
+            <td>
+                Telefonnummer
+                <a
+                    href="{{url_for('routes.all_users', sort_by_order='asc', sort_column_id='phone', get_users = get_users)}}"></a>
+            </td>
+            <td>
+                Land
+                <a
+                    href="{{url_for('routes.all_users', sort_by_order='asc', sort_column_id='country', get_users = get_users)}}"></a>
+            </td>
+            <td>
+                Länk
+            </td>
+        </tr>
+    </thead>
+
+    {% for user in users %}
+    <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.country}}</td>
+        <td><a href="/single_user_page/{{user.id}}"><img src="https://robohash.org/{{user.id}}.jpg?size=50x50"></a></td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<nav class="mypaginationnav">
+    <ul class="mypagination">
+        <li class="leftarrow">
+            {% if page > 1 %}
+            <a href="{{url_for('routes.all_users', page=page-1)}}">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+            {% endif %}
+        </li>
+
+        {% for i in range(1, num_pages + 1) %}
+        <li class="page-item">
+            <a href="{{ url_for('routes.all_users', page=i) }}">{{ i }}</a>
+        </li>
+        {% endfor %}
+
+        <li class="rightarrow">
+            {% if users.has_next %}
+            <a href="{{url_for('routes.all_users', page=page+1)}}">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+            {% endif %}
+        </li>
+    </ul>
+</nav>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Loginpage{% endblock %}
+
+{% block content %}
+
+<section class="loginsignup">
+    <h1 class="loginpageheader">FramtidsRytm AB</h1>
+    <h1 class="loginpageheader">Login page</h1>
+
+    <form class="loginpage" method="POST">
+
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+
+        <label for="password">Lösenord: </label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</section>
+{% endblock %}

@@ -1,0 +1,472 @@
+.mybody {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color: rgb(230, 230, 230);
+}
+
+
+.main {
+    display: grid;
+    width: 80vw;
+    margin: auto;
+    gap: 1.5rem;
+}
+
+.sectionsection {
+    margin: auto;
+}
+
+.navbarbase {
+    display: grid;
+    height: 5rem;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(70px);
+    background-color: rgba(95, 95, 95, 0.5);
+    align-content: center;
+    display: inline-block;
+}
+
+.navbarbase a {
+    border-right: solid aqua;
+    color: #00c76f;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+
+}
+
+.navbarbase a:last-child {
+    border-right: none;
+}
+
+.navbarbase a:hover {
+    color: aqua;
+}
+
+/* ----------Homepage---------- */
+.hero {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-color: black;
+    margin-top: -5rem;
+    margin-bottom: 1.5rem;
+    height: 100vh;
+    align-content: center;
+    color: rgb(230, 230, 230);
+    background-image: url("/static/Heroimg_left.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 55% 85%;
+}
+
+.heroheader {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: center;
+    font-size: 2.5rem;
+    font-family: "dancing script";
+    padding: 20px;
+}
+
+.heroheader h1 {
+    font-size: 5rem;
+}
+
+.heroheader h2 {
+    font-size: 3rem;
+    text-decoration: underline dotted rgba(0, 255, 255, 0.406);
+}
+
+.heroimg {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-content: center;
+    margin: 0px;
+}
+
+.herosimgsize {
+    height: 100%;
+    width: 100%;
+}
+
+.two {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 5% 45% 45% 5%;
+    height: 900px;
+    color: rgb(230, 230, 230);
+    line-height: 1.3rem;
+}
+
+.textboxsectiontwo {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin: auto;
+    padding: 10%;
+}
+
+.textboxsectiontwo h2 {
+    font-size: 40px;
+}
+
+.textboxsectiontwo p {
+    font-size: larger;
+    line-height: 1.5rem;
+}
+
+.number1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.number2 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.number3 {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+.number4 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    grid-row-end: 3;
+}
+
+.textbox {
+    border: solid rgba(0, 255, 183, 0.801);
+    margin: 5%;
+    border-radius: 15px;
+}
+
+.textboxh3 {
+    text-decoration: underline rgba(255, 166, 0, 0.76);
+    font-size: 1.5rem;
+    margin: 5px;
+    padding: 0px
+}
+
+.textbox p {
+    margin-top: 5px;
+}
+
+.number1,
+.number2,
+.number3,
+.number4 {
+    padding: 5%;
+    line-height: 1.5rem;
+    font-size: 18px;
+
+}
+
+.winners {
+    background-image: linear-gradient(to right, #4f4f4f, #4d6881, #008aa6, #00aca0, #00c76f);
+    display: grid;
+    grid-template-columns: 6% 22% 22% 22% 22% 6%;
+    grid-template-rows: 30% 70%;
+    height: 230px;
+    border-radius: 15px;
+    padding:10px;
+}
+
+.winners h2 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    margin: 3px;
+}
+
+.winnerspfirst {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    align-content: center;
+    border: solid white;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.winnerspleft {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    align-content: center;
+    border: solid white;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.winnerspmiddle {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    align-content: center;
+    border: solid white;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.winnerspright {
+    grid-column-start: 5;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    align-content: center;
+    border: solid white;
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.winnerspfirst,
+.winnerspleft,
+.winnerspmiddle,
+.winnerspright div p {
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.foooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: grey;
+    height: 7rem;
+    margin-top: 1.5rem;
+    align-content: center;
+}
+
+/* ----------/Homepage---------- */
+
+/* ----------Personalregister---------- */
+.personalregisterheader {
+    margin-top: 15px;
+}
+
+.personalregisterheader h1 {
+    font-size: 4rem;
+    font-family: "dancing script";
+}
+
+.personalregisterheader p {
+    font-style: italic;
+}
+
+.personalbutton {
+    border-radius: 5px;
+    color:#114362;
+    background-image: linear-gradient(to right top, #43aac6, #00b0bd, #00b4a2, #00b578, #2db33f);
+}
+
+.mytabletop {
+    text-align: center;
+}
+
+.searchfield {
+    display: inline-block;
+    text-align: left;
+}
+
+.searchfield p {
+    margin-bottom: 0;
+}
+
+.registerbutton {
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, #43aac6, #00b0bd, #00b4a2, #00b578, #2db33f);
+    font-size: 18px;
+    color:#114362;
+}
+
+.mypaginationnav {
+    display: block;
+}
+
+.mypagination {
+    display: block;
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mypagination li {
+    display: inline-block;
+    text-align: center;
+}
+
+.mypagination a {
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mypagination a.active {
+    background-color: #4CAF50;
+}
+
+.mypagination a:hover:not(.active) {
+    background-color: rgba(0, 242, 255, 0.58);
+    border-radius: 1000px;
+}
+
+/* ----------Personalregister---------- */
+
+/* ----------Form---------- */
+.register {
+    height: 700px;
+    margin: auto;
+    align-content: center;
+    display: grid;
+    margin: 50px;
+    padding: 20px;
+}
+
+.centerdiv {
+    margin: auto;
+    width: 60%;
+}
+
+input {
+    border-radius: 5px;
+}
+
+.register input {
+    align-content: center;
+    height: 30px;
+    margin: 5px;
+}
+
+.register select {
+    width: 97%;
+    margin: auto;
+    margin-top: 5px;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.register h3 {
+    margin: 5px;
+    font-style: italic;
+}
+
+.register button {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    color:#114362;
+}
+
+.register label {
+    text-align: left;
+    margin: 0px 0px 0px 7px;
+    font-style: italic;
+}
+
+.mytable tr td {
+    border: #00aca0 solid;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+/* ----------/Form---------- */
+
+/* ----------single_page_user---------- */
+.contactbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.infobox {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    border: #008aa6 solid;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.infobox h3 {
+    font-size: 30px;
+    margin: 2rem;
+}
+
+.infobox p {
+    font-size: 20px;
+    margin: 2rem;
+}
+
+.imgbox {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    border: #008aa6 solid;
+    margin: 10px;
+    border-radius: 15px;
+    align-content: center;
+}
+
+.imgbox img {
+    width: fit-content;
+    border-radius: 15px;
+}
+
+/* ----------/single_page_user---------- */
+
+/* ----------loginpage---------- */
+.loginpage {
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+}
+
+.loginpage input {
+    height: 30px;
+    margin: 5px;
+}
+
+.loginpageheader {
+    margin: 20px;
+    font-style: italic;
+    font-family: "dancing script";
+    font-size: 4rem;
+}
+
+.loginpage button {
+    width: 40%;
+    margin: 10px auto;
+    border-radius: 10px;
+    color:#114362;
+    background-image: linear-gradient(to right top, #43aac6, #00b0bd, #00b4a2, #00b578, #2db33f);
+}
+
+.loginpage label {
+    text-align: left;
+    margin: 0px 0px 0px 7px;
+    font-style: italic;
+}
+
+.loginsignup {
+    margin: auto;
+    width: 550px;
+}
+
+/* ----------/loginpage---------- */

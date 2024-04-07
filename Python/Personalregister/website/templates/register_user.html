@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}
+Registrera personal
+{% endblock %}
+
+{% block content %}
+<section class="sectionsection">
+    <div>
+        <h1 class="loginpageheader">Registrera ny person i vår personaldatabas!</h1>
+    </div>
+    <div class="centerdiv">
+        <form class="register" method="POST">
+            <label for="name">Namn: </label>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+
+            <label for="age">Ålder: </label>
+            <input type="number" name="age" id="age" placeholder="Age" required>
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <label for="phone">Telefonnummer: </label>
+            <input type="number" name="phone" id="phone" placeholder="Phonenumber" required>
+
+            <label for="street_name">Adress: </label>
+            <input type="text" name="street_name" id="street_name" placeholder="Street name" required>
+
+            <label for="street_number">Husnummer: </label>
+            <input type="text" name="street_number" id="street_number" placeholder="Street number" required>
+
+            <label for="postal_code">Postnummer: </label>
+            <input type="number" name="postal_code" id="postal_code" placeholder="Postal code" required>
+
+            <label for="city">Stad: </label>
+            <input type="text" name="city" id="city" placeholder="City" required>
+
+            <label for="state">Ort: </label>
+            <input type="text" name="state" id="state" placeholder="State" required>
+
+            <label for="country">Land: </label>
+            <select name="country" id="country">
+                <option value="Sverige">Sverige</option>
+                <option value="Norge">Norge</option>
+                <option value="Danmark">Danmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Island">Island</option>
+                <option value="Grönland">Grönland</option>
+                <option value="Färöarna">Färöarna</option>
+                <option value="Estland">Estland</option>
+                <option value="Lettland">Lettland</option>
+                <option value="Litauen">Litauen</option>
+            </select>
+
+            <button class="registerbutton" type="submit">Registrera!</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
